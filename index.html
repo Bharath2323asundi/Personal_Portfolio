@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bharath Portfolio</title>
   <!-- Font Awesome for Social Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+    <!-- EmailJS CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init('CRyN3vutXN7_v3r8r'); 
+    })();
+  </script>
 </head>
 <body>
   <nav id="navbar">
@@ -28,8 +35,7 @@
       <img src="./images/bharath.jpg" alt="Profile Photo" class="profile-photo" />
       <div>
         <h1>Welcome to Bharath's Portfolio</h1>
-        <p> Full-Stack Web Developer | Java Developer | Python Developer | Student |
-        </p>
+        <p> Full-Stack Web Developer | Java Developer | Python Developer | Student |</p>
         <button class="hireme-btn" onclick="goToContact()">Hire Me</button>
       </div>
     </div>
@@ -39,10 +45,9 @@
   <section id="about" class="section about-section">
     <h2>About Me</h2>
     <p>
-      Hi, I'm Bharath Asundi,I'm a Computer Science student passionate about full-stack development and problem-solving. I enjoy building modern, user-friendly web applications and exploring new technologies like Al and automation.
-      Recently, I completed a 3-month internship at Infinite Connects Media, where I gained hands-on experience and learned how to apply my skills in real-world projects.  <br>
-      I'm passionate about Python and Java, and I enjoy exploring how these technologies can be used to build efficient, scalable solutions. My focus is on continuous learning, improving my coding skills, and developing projects that make an impact
-
+      Hi, I'm Bharath Asundi, I'm a Computer Science student passionate about full-stack development and problem-solving. I enjoy building modern, user-friendly web applications and exploring new technologies like AI and automation.
+      Recently, I completed a 3-month internship at Infinite Connects Media, where I gained hands-on experience and learned how to apply my skills in real-world projects. <br>
+      I'm passionate about Python and Java, and I enjoy exploring how these technologies can be used to build efficient, scalable solutions. My focus is on continuous learning, improving my coding skills, and developing projects that make an impact
       <span id="dots">...</span>
       <span id="more">
         with a focus on building responsive websites and user experiences, especially for fitness and gym domains.
@@ -54,7 +59,7 @@
       <a href="https://github.com/Bharath2323asundi" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="www.linkedin.com/in/bharath-asundi" target="_blank" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/bharath-asundi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
@@ -119,24 +124,43 @@
     <h2>Projects</h2>
     <div class="projects-scroll">
       <div class="card">
-        <img src="./images/Digital.jpg" alt="Gym Website" class="project-img"/>
+        <img src="./images/Digital.jpg" alt="Gym Website" class="project-img" />
         <h3>Digital Marketing Website</h3>
-        <p>"Grow Your Business Online With Smart digital Solutions.</p>
+        <p>A static website built with HTML, CSS, and JavaScript to showcase digital marketing services such as SEO, social media campaigns, and branding solutions. It highlights responsive design, engaging layouts, and smooth navigation for a professional online presence..</p>
+        <div class="card-links">
+          <a href="https://bharath2323asundi.github.io/Digital-marketing/" target="_blank" class="project-btn">Host Link</a>
+          <a href="https://github.com/Bharath2323asundi/Digital-marketing" target="_blank" class="project-btn">Code Link</a>
+        </div>
       </div>
       <div class="card">
-        <img src="./images/Gym.jpg" alt="Portfolio Site" class="project-img"/>
+        <img src="./images/Gym.jpg" alt="Portfolio Site" class="project-img" />
         <h3>Responsive Gym Website</h3>
-        <p>"Transform your body with expert trainers and workouts.</p>
+        <p>A fitness website developed using HTML, CSS, and JavaScript with smooth scrolling effects and mobile-first responsiveness. It introduces services, workouts, and trainer profiles, offering an engaging user experience and modern design.</p>
+        <br>
+        <div class="card-links">
+          <a href="https://bharath2323asundi.github.io/Responsive_Gym_landingpage/" target="_blank" class="project-btn">Host Link</a>
+          <a href="https://github.com/Bharath2323asundi/Responsive_Gym_landingpage" target="_blank" class="project-btn">Code Link</a>
+        </div>
       </div>
       <div class="card">
-        <img src="./images/Food.jpg" alt="Analytics App" class="project-img"/>
-        <h3>Responsive Restarunt Website</h3>
-        <p>Delisious meals served fresh with taste you'll love.</p>
+        <img src="./images/Food.jpg" alt="Analytics App" class="project-img" />
+        <h3>Responsive Restaurant Website</h3>
+        <p>A restaurant website created with HTML and CSS, featuring a responsive layout for menu display, about section, and contact details. It is designed to provide a clean, attractive, and mobile-friendly interface for showcasing dining services..</p>
+        <br><br>
+        <div class="card-links">
+          <a href="https://bharath2323asundi.github.io/RESTAURANT/" target="_blank" class="project-btn">Host Link</a>
+          <a href="https://github.com/Bharath2323asundi/RESTAURANT.git" target="_blank" class="project-btn">Code Link</a>
+        </div>
       </div>
       <div class="card">
-        <img src="frame-generator.jpg" alt="Frame Generator" class="project-img"/>
+        <img src="./images/blogs.jpeg" alt="Frame Generator" class="project-img" />
         <h3>Full-Stack Blogs Website</h3>
-        
+        <p>A dynamic blogging platform built using HTML, CSS, JavaScript, PHP, MySQL, and > Bootstrap. It enables users to create, read, update, and delete blog posts through a user-friendly interface, offering complete CRUD functionality and database integration.</p>
+        <br>
+        <div class="card-links">
+          <a href="https://bharath2323asundi.github.io/Cards/" target="_blank" class="project-btn">Host Link</a>
+          <a href="https://github.com/Bharath2323asundi/Cards.git" target="_blank" class="project-btn">Code Link</a>
+        </div>
       </div>
     </div>
   </section>
@@ -145,18 +169,19 @@
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <form id="contactForm">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email ID" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <textarea rows="4" placeholder="Message"></textarea>
+      <input type="text" id="name" name="user_name" placeholder="Full Name" required />
+      <input type="email" id="email" name="user_email" placeholder="Email ID" required />
+      <input type="tel" id="phonenumber" name="user_phone" placeholder="Phone Number" required />
+      <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
       <button type="submit">Submit</button>
     </form>
+    <div id="form-status" style="color:green;font-weight:600;margin-top:10px;"></div>
   </section>
 
   <footer>
     <span>© 2025 ASUNDI BHARATH | ALL RIGHTS RESERVED</span>
   </footer>
 
-  <script src="./js/k.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
